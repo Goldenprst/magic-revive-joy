@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Layout } from "@/components/site/Layout";
 import Index from "./pages/Index.tsx";
 import Malles from "./pages/Malles.tsx";
+import ThemeDetail from "./pages/ThemeDetail.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -22,6 +23,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/malles" element={<Malles />} />
+            <Route path="/malles/:slug" element={<ThemeDetail />} />
             <Route path="/a-propos" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
