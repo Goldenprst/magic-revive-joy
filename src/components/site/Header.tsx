@@ -46,7 +46,12 @@ export const Header = () => {
             />
             <div className="absolute inset-0 bg-gold/30 blur-xl rounded-full -z-10" />
           </div>
-          <span className="font-display text-xl md:text-2xl font-bold tracking-tight text-primary hidden sm:inline">
+          <span
+            className={cn(
+              "font-display text-xl md:text-2xl font-bold tracking-tight hidden sm:inline transition-smooth",
+              scrolled ? "text-primary" : "text-primary-foreground drop-shadow-md"
+            )}
+          >
             Magic <span className="text-gradient-gold">Soazic</span>
           </span>
         </Link>
