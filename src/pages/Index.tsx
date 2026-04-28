@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Sparkles, PackageOpen, PartyPopper, Heart, ArrowRight, Star, Calendar, Users } from "lucide-react";
+import { Sparkles, PackageOpen, PartyPopper, Heart, ArrowRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { themes } from "@/data/themes";
 import heroImage from "@/assets/hero-magic.jpg";
@@ -139,30 +139,27 @@ const Index = () => {
             </Button>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {themes.slice(0, 6).map((theme) => (
-              <article
+          <div className="grid sm:grid-cols-2 gap-6">
+            {themes.map((theme) => (
+              <Link
                 key={theme.slug}
-                className={`card-magic p-7 bg-gradient-to-br ${theme.color}`}
+                to={`/malles/${theme.slug}`}
+                className={`card-magic p-7 bg-gradient-to-br ${theme.color} group block`}
               >
-                <div className="text-5xl mb-4">{theme.emoji}</div>
+                <div className="text-5xl mb-4 group-hover:scale-110 transition-magic">
+                  {theme.emoji}
+                </div>
                 <h3 className="font-display text-2xl font-semibold text-primary mb-2">
                   {theme.name}
                 </h3>
                 <p className="font-serif text-base text-primary/70 italic mb-4">
                   {theme.tagline}
                 </p>
-                <div className="flex items-center gap-4 text-xs font-sans text-primary/60">
-                  <span className="flex items-center gap-1">
-                    <Users className="h-3.5 w-3.5" />
-                    {theme.ageRange}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Calendar className="h-3.5 w-3.5" />
-                    {theme.duration}
-                  </span>
-                </div>
-              </article>
+                <span className="inline-flex items-center gap-2 font-sans text-sm font-semibold text-gold-deep group-hover:gap-3 transition-smooth">
+                  Découvrir
+                  <ArrowRight className="h-4 w-4" />
+                </span>
+              </Link>
             ))}
           </div>
         </div>
@@ -225,22 +222,17 @@ const Index = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
               {
-                name: "Sophie L.",
-                kid: "Léa, 6 ans",
-                text: "La malle Princesses était parfaite. J'ai gagné des heures de préparation et ma fille est aux anges.",
+                name: "Fanja",
+                theme: "Le meilleur gâteau",
+                text: "Idée d'activité très originale, déguisements soignés, matériel complet et de qualité, feuilles d'explications très claires. Les 8 petites pâtissières se sont régalées, et moi aussi !",
               },
               {
-                name: "Mathieu D.",
-                kid: "Hugo, 8 ans",
-                text: "Le déroulé est extra. Même moi qui ne sais pas animer, j'ai pu enchaîner les activités sans stress.",
-              },
-              {
-                name: "Camille R.",
-                kid: "Jeanne, 5 ans",
-                text: "Tout est de qualité, c'est joli, c'est pensé. Les enfants étaient émerveillés. À refaire !",
+                name: "Laurianne",
+                theme: "À l'école de magie",
+                text: "Agréablement surprise de voir tous les ustensiles et détails proposés (bougies volantes, potions magiques, la chouette Edwige…). Il y a même un mode d'emploi pour la mise en place.",
               },
             ].map((t) => (
               <figure key={t.name} className="card-magic p-7">
@@ -254,7 +246,7 @@ const Index = () => {
                 </blockquote>
                 <figcaption className="font-sans text-sm">
                   <div className="font-semibold text-primary">{t.name}</div>
-                  <div className="text-muted-foreground">Maman/Papa de {t.kid}</div>
+                  <div className="text-muted-foreground">Malle {t.theme}</div>
                 </figcaption>
               </figure>
             ))}
