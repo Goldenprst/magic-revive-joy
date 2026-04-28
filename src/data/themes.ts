@@ -103,7 +103,7 @@ export const themes: Theme[] = [
     tagline: "À l'abordage, moussaillons !",
     emoji: "🏴‍☠️",
     color: "from-amber-300/30 to-red-300/30",
-    price: "Sur demande",
+    price: "60 €",
     ageRange: "Dès 5 ans",
     duration: "Activités intérieures ou extérieures",
     shortDescription:
