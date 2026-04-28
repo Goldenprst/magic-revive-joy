@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Sparkles, PackageOpen, PartyPopper, Heart, ArrowRight, Star, Calendar, Users } from "lucide-react";
+import { Sparkles, PackageOpen, PartyPopper, Heart, ArrowRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { themes } from "@/data/themes";
 import heroImage from "@/assets/hero-magic.jpg";
