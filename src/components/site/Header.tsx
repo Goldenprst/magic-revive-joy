@@ -1,7 +1,8 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Sparkles, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo-magic-soazic.png";
 
 const links = [
   { to: "/", label: "Accueil" },
@@ -34,12 +35,18 @@ export const Header = () => {
       )}
     >
       <div className="container flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center gap-2 group">
+        <Link to="/" className="flex items-center gap-3 group" aria-label="Magic Soazic - Accueil">
           <div className="relative">
-            <Sparkles className="h-7 w-7 text-gold transition-magic group-hover:rotate-12" />
+            <img
+              src={logo}
+              alt="Magic Soazic"
+              width={56}
+              height={56}
+              className="h-12 w-12 md:h-14 md:w-14 object-contain transition-magic group-hover:rotate-6"
+            />
             <div className="absolute inset-0 bg-gold/30 blur-xl rounded-full -z-10" />
           </div>
-          <span className="font-display text-2xl font-bold tracking-tight text-primary">
+          <span className="font-display text-xl md:text-2xl font-bold tracking-tight text-primary hidden sm:inline">
             Magic <span className="text-gradient-gold">Soazic</span>
           </span>
         </Link>
