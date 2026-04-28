@@ -1,3 +1,50 @@
+// Galeries photos importées depuis src/assets/themes
+import gateau1 from "@/assets/themes/gateau-1.jpg";
+import gateau2 from "@/assets/themes/gateau-2.jpg";
+import magie1 from "@/assets/themes/magie-1.jpg";
+import magie2 from "@/assets/themes/magie-2.jpg";
+import magie3 from "@/assets/themes/magie-3.jpg";
+import magie4 from "@/assets/themes/magie-4.jpg";
+import magie5 from "@/assets/themes/magie-5.jpg";
+import magie6 from "@/assets/themes/magie-6.jpg";
+import magie7 from "@/assets/themes/magie-7.jpg";
+import magie8 from "@/assets/themes/magie-8.jpg";
+import pirates1 from "@/assets/themes/pirates-1.jpg";
+import pirates2 from "@/assets/themes/pirates-2.jpg";
+import pirates3 from "@/assets/themes/pirates-3.jpg";
+import pirates4 from "@/assets/themes/pirates-4.jpg";
+import pirates5 from "@/assets/themes/pirates-5.jpg";
+import pirates6 from "@/assets/themes/pirates-6.jpg";
+import pirates7 from "@/assets/themes/pirates-7.jpg";
+import pirates8 from "@/assets/themes/pirates-8.jpeg";
+import pirates9 from "@/assets/themes/pirates-9.jpeg";
+import princesses1 from "@/assets/themes/princesses-1.jpg";
+import princesses2 from "@/assets/themes/princesses-2.jpg";
+import princesses3 from "@/assets/themes/princesses-3.jpg";
+import princesses4 from "@/assets/themes/princesses-4.jpg";
+import princesses5 from "@/assets/themes/princesses-5.jpg";
+import princesses6 from "@/assets/themes/princesses-6.jpg";
+import chantier1 from "@/assets/themes/chantier-1.jpg";
+import chantier2 from "@/assets/themes/chantier-2.jpg";
+import chantier3 from "@/assets/themes/chantier-3.jpg";
+import chantier4 from "@/assets/themes/chantier-4.jpg";
+import chantier5 from "@/assets/themes/chantier-5.jpg";
+import chantier6 from "@/assets/themes/chantier-6.jpg";
+import chantier7 from "@/assets/themes/chantier-7.jpg";
+import chantier8 from "@/assets/themes/chantier-8.jpg";
+import chine1 from "@/assets/themes/chine-1.jpg";
+import chine2 from "@/assets/themes/chine-2.jpg";
+import chine3 from "@/assets/themes/chine-3.jpg";
+import chine4 from "@/assets/themes/chine-4.jpeg";
+import inde1 from "@/assets/themes/inde-1.jpg";
+import inde2 from "@/assets/themes/inde-2.jpg";
+import inde3 from "@/assets/themes/inde-3.jpg";
+import inde4 from "@/assets/themes/inde-4.jpg";
+import inde5 from "@/assets/themes/inde-5.jpg";
+import inde6 from "@/assets/themes/inde-6.jpg";
+import inde7 from "@/assets/themes/inde-7.jpg";
+import inde8 from "@/assets/themes/inde-8.jpg";
+
 export type Theme = {
   slug: string;
   name: string;
@@ -61,7 +108,7 @@ export const themes: Theme[] = [
         "Plusieurs parents m'ont fait un retour très positif sur l'originalité du concept et bien entendu sur l'enthousiasme de leur enfant. En résumé : les 8 petites pâtissières se sont régalées, et moi aussi !",
       ],
     },
-    gallery: [],
+    gallery: [gateau1, gateau2],
   },
   {
     slug: "ecole-de-magie",
@@ -95,7 +142,7 @@ export const themes: Theme[] = [
         "Il y a même un mode d'emploi pour faciliter la mise en place du décor et le déroulé de l'événement.",
       ],
     },
-    gallery: [],
+    gallery: [magie1, magie2, magie3, magie4, magie5, magie6, magie7, magie8],
   },
   {
     slug: "pirates",
@@ -121,7 +168,7 @@ export const themes: Theme[] = [
       "Carte au trésor et coffre à découvrir",
       "Activités modulables intérieur / extérieur",
     ],
-    gallery: [],
+    gallery: [pirates1, pirates2, pirates3, pirates4, pirates5, pirates6, pirates7, pirates8, pirates9],
   },
   {
     slug: "princesses",
@@ -145,7 +192,7 @@ export const themes: Theme[] = [
       "Construction collective du château",
       "Univers princesses ET chevaliers",
     ],
-    gallery: [],
+    gallery: [princesses1, princesses2, princesses3, princesses4, princesses5, princesses6],
   },
   {
     slug: "chantier",
@@ -169,7 +216,7 @@ export const themes: Theme[] = [
       "Démolition puis reconstruction",
       "Plan et mesures à respecter",
     ],
-    gallery: [],
+    gallery: [chantier1, chantier2, chantier3, chantier4, chantier5, chantier6, chantier7, chantier8],
   },
   {
     slug: "voyage-en-chine",
@@ -193,7 +240,7 @@ export const themes: Theme[] = [
       "Immersion culturelle",
       "Décor dépaysant",
     ],
-    gallery: [],
+    gallery: [chine1, chine2, chine3, chine4],
   },
   {
     slug: "voyage-en-inde",
@@ -218,6 +265,6 @@ export const themes: Theme[] = [
       "Découverte culturelle",
       "Apprentissage d'une danse indienne",
     ],
-    gallery: [],
+    gallery: [inde1, inde2, inde3, inde4, inde5, inde6, inde7, inde8],
   },
 ];
