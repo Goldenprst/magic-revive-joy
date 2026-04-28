@@ -108,7 +108,7 @@ export const themes: Theme[] = [
         "Plusieurs parents m'ont fait un retour très positif sur l'originalité du concept et bien entendu sur l'enthousiasme de leur enfant. En résumé : les 8 petites pâtissières se sont régalées, et moi aussi !",
       ],
     },
-    gallery: [],
+    gallery: [gateau1, gateau2],
   },
   {
     slug: "ecole-de-magie",
@@ -142,7 +142,7 @@ export const themes: Theme[] = [
         "Il y a même un mode d'emploi pour faciliter la mise en place du décor et le déroulé de l'événement.",
       ],
     },
-    gallery: [],
+    gallery: [magie1, magie2, magie3, magie4, magie5, magie6, magie7, magie8],
   },
   {
     slug: "pirates",
@@ -168,7 +168,7 @@ export const themes: Theme[] = [
       "Carte au trésor et coffre à découvrir",
       "Activités modulables intérieur / extérieur",
     ],
-    gallery: [],
+    gallery: [pirates1, pirates2, pirates3, pirates4, pirates5, pirates6, pirates7, pirates8, pirates9],
   },
   {
     slug: "princesses",
@@ -192,7 +192,7 @@ export const themes: Theme[] = [
       "Construction collective du château",
       "Univers princesses ET chevaliers",
     ],
-    gallery: [],
+    gallery: [princesses1, princesses2, princesses3, princesses4, princesses5, princesses6],
   },
   {
     slug: "chantier",
@@ -216,7 +216,7 @@ export const themes: Theme[] = [
       "Démolition puis reconstruction",
       "Plan et mesures à respecter",
     ],
-    gallery: [],
+    gallery: [chantier1, chantier2, chantier3, chantier4, chantier5, chantier6, chantier7, chantier8],
   },
   {
     slug: "voyage-en-chine",
@@ -240,7 +240,7 @@ export const themes: Theme[] = [
       "Immersion culturelle",
       "Décor dépaysant",
     ],
-    gallery: [],
+    gallery: [chine1, chine2, chine3, chine4],
   },
   {
     slug: "voyage-en-inde",
@@ -265,6 +265,6 @@ export const themes: Theme[] = [
       "Découverte culturelle",
       "Apprentissage d'une danse indienne",
     ],
-    gallery: [],
+    gallery: [inde1, inde2, inde3, inde4, inde5, inde6, inde7, inde8],
   },
 ];
