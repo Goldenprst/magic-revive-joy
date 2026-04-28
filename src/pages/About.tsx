@@ -17,8 +17,8 @@ const About = () => {
       a: "Chaque malle est dimensionnée pour environ une dizaine d'enfants. Les déguisements et accessoires sont prévus en quantité, et le déroulé d'animation est calibré pour ce groupe.",
     },
     {
-      q: "Comment fonctionne la livraison ou le retrait ?",
-      a: "Le retrait s'organise en main propre selon votre localisation. Une livraison peut être proposée selon la distance — nous en discutons au moment de la réservation.",
+      q: "Comment se passe le retrait de la malle ?",
+      a: "Le retrait s'organise en main propre à Tournefeuille (31). Nous convenons ensemble du créneau au moment de la réservation.",
     },
     {
       q: "Quel est le montant de la caution ?",
@@ -96,7 +96,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "Réservation", desc: "Demande via le formulaire, confirmation des disponibilités sous 48h, acompte pour valider." },
-              { title: "Remise de la malle", desc: "Retrait ou livraison selon distance, état des lieux ensemble, signature de la charte." },
+              { title: "Remise de la malle", desc: "Retrait en main propre à Tournefeuille (31), état des lieux ensemble, signature de la charte." },
               { title: "Pendant la fête", desc: "Suivez le déroulé fourni, profitez ! Je reste joignable en cas de question." },
               { title: "Restitution", desc: "Retour de la malle propre et complète, vérification rapide, restitution de la caution." },
             ].map((step, i) => (
