@@ -84,7 +84,7 @@ const Contact = () => {
                   <h3 className="font-display text-lg font-semibold text-primary">Zone</h3>
                 </div>
                 <p className="font-serif text-base text-muted-foreground">
-                  Tournefeuille (31) — retrait en main propre, livraison selon distance.
+                  Tournefeuille (31) — retrait en main propre.
                 </p>
               </div>
 
