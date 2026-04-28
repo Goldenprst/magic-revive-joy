@@ -1,13 +1,21 @@
 import { Link } from "react-router-dom";
-import { Sparkles, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo-magic-soazic.png";
 
 export const Footer = () => {
   return (
     <footer className="magic-sky text-primary-foreground mt-20">
       <div className="container relative z-10 py-16 grid gap-10 md:grid-cols-3">
         <div>
-          <Link to="/" className="flex items-center gap-2">
-            <Sparkles className="h-6 w-6 text-gold" />
+          <Link to="/" className="flex items-center gap-3" aria-label="Magic Soazic - Accueil">
+            <img
+              src={logo}
+              alt="Magic Soazic"
+              width={48}
+              height={48}
+              loading="lazy"
+              className="h-12 w-12 object-contain"
+            />
             <span className="font-display text-xl font-bold">
               Magic <span className="text-gradient-gold">Soazic</span>
             </span>
