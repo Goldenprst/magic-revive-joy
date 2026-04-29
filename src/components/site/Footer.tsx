@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import logo from "@/assets/logo-magic-soazic.png";
 
 export const Footer = () => {
@@ -43,6 +43,12 @@ export const Footer = () => {
               <Mail className="h-4 w-4 text-gold" />
               <a href="mailto:contact@magicsoazic.fr" className="hover:text-gold transition-smooth">
                 contact@magicsoazic.fr
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Phone className="h-4 w-4 text-gold" />
+              <a href="tel:+33745140213" className="hover:text-gold transition-smooth">
+                07 45 14 02 13
               </a>
             </li>
             <li className="flex items-center gap-2">

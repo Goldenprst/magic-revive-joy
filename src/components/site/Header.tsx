@@ -74,12 +74,6 @@ export const Header = () => {
               {link.label}
             </NavLink>
           ))}
-          <Link
-            to="/contact"
-            className="ml-3 inline-flex h-10 items-center rounded-full bg-gradient-gold px-5 text-sm font-semibold text-primary shadow-glow hover:shadow-magic hover:-translate-y-0.5 transition-magic font-sans"
-          >
-            Réserver
-          </Link>
         </nav>
 
         <button
