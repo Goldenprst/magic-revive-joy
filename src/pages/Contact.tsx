@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MapPin, Sparkles, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Sparkles, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -73,6 +73,21 @@ const Contact = () => {
                   className="font-serif text-base text-muted-foreground hover:text-gold-deep transition-smooth"
                 >
                   contact@magicsoazic.fr
+                </a>
+              </div>
+
+              <div className="card-magic p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="h-10 w-10 rounded-full bg-gradient-gold flex items-center justify-center">
+                    <Phone className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="font-display text-lg font-semibold text-primary">Téléphone</h3>
+                </div>
+                <a
+                  href="tel:+33745140213"
+                  className="font-serif text-base text-muted-foreground hover:text-gold-deep transition-smooth"
+                >
+                  07 45 14 02 13
                 </a>
               </div>
 

@@ -105,9 +105,10 @@ export const themes: Theme[] = [
       author: "Fanja",
       text: [
         "J'ai essayé la mallette « Le meilleur gâteau » de Magic Soazic pour les 7 ans de ma fille.",
-        "J'ai été très satisfaite sur plusieurs points : idée d'activité très originale, déguisements soignés et chouettes, matériel complet et de qualité, feuilles d'explications très claires et rédigées avec de jolis clins d'œil aux parents.",
+        "J'ai été très satisfaite de cette mallette sur plusieurs points : idée d'activité très originale, déguisements soignés et chouettes, matériel complet et de qualité, feuilles d'explications très claires et rédigées avec de jolis clins d'œil aux parents.",
         "Ayant été très en retard dans l'organisation de cet anniversaire, j'ai été ravie de me retrouver avec cette mallette « prête à l'emploi » me déchargeant des conséquences de ce retard, et qui plus est avec une qualité exceptionnelle.",
-        "Plusieurs parents m'ont fait un retour très positif sur l'originalité du concept et bien entendu sur l'enthousiasme de leur enfant. En résumé : les 8 petites pâtissières se sont régalées, et moi aussi !",
+        "Plusieurs parents m'ont fait un retour très positif sur l'originalité du concept et bien entendu sur l'enthousiasme de leur enfant concernant cet anniversaire. D'autres m'ont fait part de la « fierté » de leurs enfants d'avoir confectionné des cupcakes colorés.",
+        "En résumé : les 8 petites pâtissières se sont régalées, et moi aussi ! Merci à Magic Soazic !",
       ],
     },
     gallery: [gateau1, gateau2],
@@ -143,6 +144,7 @@ export const themes: Theme[] = [
         "J'ai utilisé la malle À l'école de Magie pour les 10 ans de mon fils.",
         "J'ai été agréablement surprise de voir tous les ustensiles et détails proposés dans cette malle (bougies volantes, sticker de Mimi Geignarde, potions magiques, la chouette Edwige dans sa cage…).",
         "Il y a même un mode d'emploi pour faciliter la mise en place du décor et le déroulé de l'événement.",
+        "Mon fils a été ravi et ses amis aussi, ça restera un souvenir inoubliable pour lui, qui est un vrai fan du monde Harry Potter. Je recommande sans hésiter !!",
       ],
     },
     gallery: [magie1, magie2, magie3, magie4, magie5, magie6, magie7, magie8],
@@ -196,6 +198,7 @@ export const themes: Theme[] = [
       "Univers princesses ET chevaliers",
     ],
     gallery: [princesses1, princesses2, princesses3, princesses4, princesses5, princesses6],
+    youtubeId: "-14wuADE2Qc",
   },
   {
     slug: "chantier",

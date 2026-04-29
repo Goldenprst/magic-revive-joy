@@ -85,12 +85,12 @@ const Index = () => {
                 icon: Sparkles,
                 step: "01",
                 title: "Choisissez un thème",
-                desc: "Princesses, pirates, sorciers, licornes… Sélectionnez l'univers qui fera briller les yeux de votre enfant.",
+                desc: "Princesses, pirates, école de magie, chantier… Sélectionnez l'univers qui fera briller les yeux de votre enfant.",
               },
               {
                 icon: PackageOpen,
                 step: "02",
-                title: "Recevez la malle",
+                title: "Récupérez la malle",
                 desc: "Elle arrive complète : décoration, dix déguisements, accessoires, activités et déroulé détaillé.",
               },
               {
