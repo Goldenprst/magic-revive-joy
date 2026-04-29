@@ -69,6 +69,8 @@ export type Theme = {
    * et ajoutez l'URL dans ce tableau.
    */
   gallery: string[];
+  /** ID YouTube optionnel (ex: "DdWO3xuOa4g") */
+  youtubeId?: string;
 };
 
 export const themes: Theme[] = [
@@ -109,6 +111,7 @@ export const themes: Theme[] = [
       ],
     },
     gallery: [gateau1, gateau2],
+    youtubeId: "DdWO3xuOa4g",
   },
   {
     slug: "ecole-de-magie",
