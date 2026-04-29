@@ -91,7 +91,7 @@ const Index = () => {
                 icon: PackageOpen,
                 step: "02",
                 title: "Récupérez la malle",
-                desc: "Elle arrive complète : décoration, dix déguisements, accessoires, activités et déroulé détaillé.",
+                desc: "La malle est complète : décoration, dix déguisements, accessoires, activités et déroulé détaillé.",
               },
               {
                 icon: PartyPopper,
