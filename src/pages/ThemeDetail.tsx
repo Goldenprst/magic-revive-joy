@@ -100,6 +100,34 @@ const ThemeDetail = () => {
         </div>
       </section>
 
+      {/* VIDÉO */}
+      {theme.youtubeId && (
+        <section className="py-16 bg-gradient-soft">
+          <div className="container max-w-4xl">
+            <div className="text-center mb-8">
+              <p className="font-sans text-xs font-semibold tracking-widest uppercase text-gold-deep mb-2">
+                En vidéo
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">
+                Découvrez la malle en mouvement
+              </h2>
+            </div>
+            <div className="card-magic p-2 overflow-hidden">
+              <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+                <iframe
+                  src={`https://www.youtube.com/embed/${theme.youtubeId}`}
+                  title={`Vidéo de présentation — ${theme.name}`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* GALERIE */}
       <section className="py-16">
         <div className="container max-w-5xl">
