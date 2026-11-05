@@ -31,6 +31,9 @@ jobs:
         with:
           path: ./dist
 
+      - name: Create 404.html for SPA routing
+        run: cp dist/index.html dist/404.html
+
   deploy:
     needs: build
     permissions:
