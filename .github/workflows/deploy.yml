@@ -21,8 +21,10 @@ jobs:
           npm install
           npm run build
 
-      - name: Copy CNAME to dist
-        run: cp public/CNAME dist/CNAME
+      - name: Copy CNAME and .nojekyll to dist
+        run: |
+          cp public/CNAME dist/CNAME
+          cp public/.nojekyll dist/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
